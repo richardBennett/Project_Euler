@@ -1,5 +1,5 @@
-/* Richard Bennett	2/25/2016
-What is the 10001st prime number?
+/* Richard Bennett 2/26/2016
+Find the sum of all the primes below two million.
 */
 
 #include <iostream>
@@ -19,22 +19,19 @@ bool isPrime(long number)
 }
 
 //Main
-int main() {
-	
+int main() 
+{
 	//Variables
-	int suspect = 1;
-	int primeCount = 0;
+	long sum	= 0;		//Holds the sum
 	//
-
-	while(primeCount < 10001) { 			//Until there is 10001 primes counted
-		suspect++;							//go up a number
-		if(isPrime(suspect)) primeCount++;	//check if it is a prime and if it is increment primeCount
-	}
+	
+	for(long i = 0; i < 2000000; i++)	//For 1 through 2 million
+		if(isPrime(i)) sum += i;			//If it's prime add it to sum
 
 	//Print output
-	cout << "\nEuler Project Problem 7" << endl;
-	cout << "The 10001st prime number is:" << endl;
-	cout << suspect << "\n" << endl;
+	cout << "\nEuler Project Problem 10" << endl;
+	cout << "Find the sum of all the primes below two million\n" << endl;
+	cout << "The answer is: " << sum << "\n" << endl;
 	//
 	return 0;
 }

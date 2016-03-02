@@ -27,8 +27,8 @@ int main()
 	else answer = squaredSum - sumSquared;		// else it's squaredSum - sumSquared
 
 	//Print output
-	cout << "\nEuler Problem 6" << endl;
-	cout << "the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is:" << endl;
+	cout << "\nEuler Project Problem 6" << endl;
+	cout << "the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is:\n" << endl;
 	cout << answer << "\n" << endl;
 	//
 	return 0;
